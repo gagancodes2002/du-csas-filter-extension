@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 200px;
+        font-family: Arial, sans-serif;
+      }
+      input,
+      select {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .autocomplete {
+        position: relative;
+        display: inline-block;
+      }
+      .autocomplete-items {
+        position: absolute;
+        border: 1px solid #d4d4d4;
+        border-bottom: none;
+        border-top: none;
+        z-index: 99;
+        top: 100%;
+        left: 0;
+        right: 0;
+      }
+      .autocomplete-items div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        border-bottom: 1px solid #d4d4d4;
+      }
+      .autocomplete-items div:hover {
+        background-color: #e9e9e9;
+      }
+      .autocomplete-active {
+        background-color: DodgerBlue !important;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Filter Selection</h3>
+    <div class="autocomplete" style="width: 100%">
+      <input id="collegeName" type="text" placeholder="College Name" />
+    </div>
+    <div class="autocomplete" style="width: 100%">
+      <input id="programmeName" type="text" placeholder="Programme Name" />
+    </div>
+    <button id="submit">Submit</button>
+    <script src="popup.js"></script>
+  </body>
+</html>

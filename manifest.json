@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "College Highlighter",
+  "version": "1.0",
+  "description": "Highlights and scrolls to the selected college and program.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
